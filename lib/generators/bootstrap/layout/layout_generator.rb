@@ -6,6 +6,7 @@ module Bootstrap
       source_root File.expand_path("../templates", __FILE__)
       desc "This generator generates layout file with navigation."
       argument :layout_name, :type => :string, :default => "application"
+      argument :layout_type, :type => :string, :default => "fixed"
 
       attr_reader :app_name
 
